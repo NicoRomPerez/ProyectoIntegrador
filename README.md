@@ -1,11 +1,11 @@
 # ProyectoIntegrador
 Proyecto Integrador
 
-Integrantes
+## Integrantes
 
-**Marisabel Albarracin: Backend BD**
-**Brenda Montero: Frontend**
-**Nicolas Romero:Frontend**
-**Camilo Mórtigo:Backend BD QA**
+- **Marisabel Albarracin: Backend BD**
+- **Brenda Montero: Frontend**
+- **Nicolas Romero:Frontend**
+- **Camilo Mórtigo:Backend BD QA**
 
 EXITOS!!!
