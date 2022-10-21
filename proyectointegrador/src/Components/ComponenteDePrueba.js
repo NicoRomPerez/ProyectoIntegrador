@@ -2,7 +2,16 @@ import React from 'react'
 
 const ComponenteDePrueba = () => {
   return (
-    <div>ComponenteDePrueba</div>
+    <div>ComponenteDePrueba
+
+    <form style={{backgroundColor: "red"}}>
+        <input className="inputPrimary" type="text" placeholder="Input 1"></input>
+        <input className="inputPrimary" type="text" placeholder="Input 2"></input>
+        <input className="buttonPrimary" type="submit" value="Button 1"></input>
+        <input className="buttonSecondary" type="submit"  value="Button 2"></input>
+        <input className="buttonTthird" type="submit"  value="Button 3"></input>
+      </form> 
+    </div>
   )
 }
 
