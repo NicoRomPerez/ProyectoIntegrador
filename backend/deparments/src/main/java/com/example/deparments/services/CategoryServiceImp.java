@@ -3,10 +3,12 @@ package com.example.deparments.services;
 import com.example.deparments.entities.Category;
 import com.example.deparments.repositories.ICategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class CategoryServiceImp implements ICategoryService {
 
     @Autowired
