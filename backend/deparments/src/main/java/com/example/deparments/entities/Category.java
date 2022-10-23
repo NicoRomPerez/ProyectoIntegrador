@@ -4,31 +4,31 @@ package com.example.deparments.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "categories")
+@Table(name = "categorias")
 public class Category {
 
     @Id
-    @SequenceGenerator(name = "categorie_sequence", sequenceName = "categorie_sequence", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "categorie_sequence")
+    @SequenceGenerator(name = "categoria_sequence", sequenceName = "categoria_sequence", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "categoria_sequence")
     private Long id;
     @Column
-    private String title;
+    private String titulo;
     @Column
-    private String description;
+    private String descripcion;
     @Column
-    private String URLImage;
+    private String urlimagen;
 
-    public Category(Long id, String title, String description, String URLImage) {
+    public Category(Long id, String titulo, String descripcion, String urlimagen) {
         this.id = id;
-        this.title = title;
-        this.description = description;
-        this.URLImage = URLImage;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.urlimagen = urlimagen;
     }
 
-    public Category(String title, String description, String URLImage) {
-        this.title = title;
-        this.description = description;
-        this.URLImage = URLImage;
+    public Category(String titulo, String descripcion, String urlimagen) {
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.urlimagen = urlimagen;
     }
 
     public Category() { }
@@ -41,27 +41,27 @@ public class Category {
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public String getURLImage() {
-        return URLImage;
+    public String getURLImagen() {
+        return urlimagen;
     }
 
-    public void setURLImage(String URLImage) {
-        this.URLImage = URLImage;
+    public void setURLImagen(String urlimagen) {
+        this.urlimagen = urlimagen;
     }
 }
