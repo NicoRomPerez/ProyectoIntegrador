@@ -11,7 +11,6 @@ li{
 }
 
 a{
-    color: $linksColor;
     text-decoration: none;
 }
 
@@ -29,12 +28,11 @@ label{
     width: 206px;
     left: 0px;
     top: 0px;
-    border-radius: 5px;
+    
 
     background: $mainColor;
     color: $backGroundColor;
 
-    box-shadow: $boxShadow;
     border-radius: 5px;
 
     font-family:var(--font-roboto);

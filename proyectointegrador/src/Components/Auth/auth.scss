@@ -1,0 +1,31 @@
+@import './../../Styles/Scsss/abstracts/variables';
+
+.auth {
+    .body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 71vh;
+        .card-login{
+            width: 50vw;
+        .tittle{
+            text-align: center;
+            color: $mainColor;
+        }
+        .container-button{
+        display: flex;
+        justify-content: center;
+            
+        }
+        .buttonPrimary{
+        margin-top: 20px;
+
+        }
+        .go-to-register{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        }
+        }
+    }
+}
