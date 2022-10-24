@@ -7,6 +7,6 @@ Proyecto Integrador
 - **Brenda Montero: Frontend**
 - **Nicolas Romero:Frontend**
 - **Camilo Mórtigo:Backend BD QA**
-- **Juan Luque:Infra **
+- **Juan Luque:Infra**
 
 EXITOS!!!
