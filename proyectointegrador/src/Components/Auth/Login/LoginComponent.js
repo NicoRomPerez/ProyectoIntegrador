@@ -6,12 +6,11 @@ import Input from '../../Commons/Input/Input'
 import './../auth.scss'
 
 import { Link } from 'react-router-dom'
-const Login = () => {
+const ComponentLogin = () => {
   return (
     <div className='auth'>
-        <Header className="header"></Header>
           <Body className='container'> 
-          
+
           <div className='card-login'>
             <h1 className='tittle'>
               Iniciar sesión
@@ -29,10 +28,9 @@ const Login = () => {
                 </span>
             </div>
           </Body>
-        <Footer className="footer"></Footer>
     </div>
-    
+
   )
 }
 
-export default Login
+export default ComponentLogin

@@ -5,10 +5,9 @@ import Body from '../../Body/Body'
 import Input from '../../Commons/Input/Input'
 import './../auth.scss'
 import './Register.scss'
-const Register = () => {
+const RegisterComponent = () => {
   return (
     <div className='auth'>
-        <Header className="header"></Header>
         <Body className='container'> 
           <div className='card-login'>
             <h1 className='tittle'>
@@ -28,9 +27,8 @@ const Register = () => {
               </div>
             </div>
           </Body>
-        <Footer className="footer"></Footer>
     </div>
   )
 }
 
-export default Register
+export default RegisterComponent
