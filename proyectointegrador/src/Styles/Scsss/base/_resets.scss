@@ -11,6 +11,7 @@ li{
 }
 
 a{
+    color: $linksColor;
     text-decoration: none;
 }
 
@@ -28,11 +29,12 @@ label{
     width: 206px;
     left: 0px;
     top: 0px;
-    
+    border-radius: 5px;
 
     background: $mainColor;
     color: $backGroundColor;
 
+    box-shadow: $boxShadow;
     border-radius: 5px;
 
     font-family:var(--font-roboto);
@@ -56,10 +58,13 @@ label{
 
 .buttonTthird{
     height: 40px;
-    width: 346px;
+    width: 206px;
     left: 0px;
     top: 0px;
     border-radius: 5px;
+    padding: 10px;
+
+    border: 1px solid #1DBEB4;
 
     color: $mainColor;
 
@@ -90,14 +95,19 @@ label{
 }
 //Plantilla de header
 .header{
-    background-color: $mainColor;
+    background-color: $backGroundColor;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    height: 80px;
 
     padding: 10px;
 
+}
+
+.header li{
+    margin-left: 10px;
 }
 
 //Plantilla menu hamburguesa
@@ -105,14 +115,43 @@ label{
     display: block;
 }
 
+//
+.menu{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+//plantilla container logo
+.slogan{
+    margin-left: 10px;
+}
+
 //Plantilla footer
 .footer{
     background-color: $mainColor;
     position: fixed;
     bottom: 0; left: 0; right: 0;
-    height: 50px;
+    height: 58px;
 
     padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer li{
+    margin-left: 15px;
 }
 //Plantilla body
 
