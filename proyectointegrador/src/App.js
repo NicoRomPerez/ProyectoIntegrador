@@ -1,9 +1,9 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import ComponenteDePrueba from './Components/ComponenteDePrueba';
-import Register from './Components/Register';
 import Home from './Components/Home';
-import Login from './Components/Login';
+import Login from './Components/Auth/Login/Login';
+import Register from './Components/Auth/Register/Register';
 import React, { useState } from 'react';
 
 function App() {

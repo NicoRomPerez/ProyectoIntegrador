@@ -1,34 +1,38 @@
 import React from 'react'
-import Footer from '../../Footer/Footer'
 import Header from '../../Header/Header'
+import Footer from '../../Footer/Footer'
 import Body from '../../Body/Body'
 import Input from '../../Commons/Input/Input'
 import './../auth.scss'
-import './Register.scss'
-const RegisterComponent = () => {
+
+import { Link } from 'react-router-dom'
+const Login = () => {
   return (
     <div className='auth'>
+        <Header className="header"></Header>
         <Body className='container'> 
+
           <div className='card-login'>
             <h1 className='tittle'>
-              Crear cuenta
+              Iniciar sesión
             </h1>
-            <div className='full-name'>
-              <Input label='Nombre'/>
-              <Input label='Apellido'/>
-            </div>
               <Input label='Correo electrónico'/>
               <Input label='Contraseña'/>
-              <Input label='Confirmar contraseña'/>
               <div className='container-button'>
                 <button className='buttonPrimary'>
-                  Crear cuenta
+                  Ingresar
                 </button>
               </div>
+                <span className='go-to-register'>
+                  ¿Aún no tienes cuenta? 
+                  <Link to={'/register'}>Registrate</Link>
+                </span>
             </div>
-          </Body>
+        </Body>
+        <Footer className="footer"></Footer>
     </div>
+
   )
 }
 
-export default RegisterComponent
+export default Login

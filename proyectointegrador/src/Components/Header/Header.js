@@ -19,7 +19,7 @@ const Header = ({a}) => {
       </div>
 
 
-      <a className="hamburgerMenu" href="http://localhost:3000/home">
+      <a className="hamburgerMenu" href="http://localhost:3000/componentePrueba">
           <img src={hamburgerMenu} alt="Menu" />  
       </a>
       <ul className='menu'>

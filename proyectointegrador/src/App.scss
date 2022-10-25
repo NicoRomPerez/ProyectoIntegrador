@@ -22,6 +22,10 @@
     height: 40px;
     width: 164px;
   }
+
+  .buttonPrimary{
+    width: 346px;
+  }
 }
 //Mobile
 @media only  screen and (max-width: 412px) and (min-width: 300px) {
@@ -38,6 +42,14 @@
     width: 394px;
     background-color: $mainColor;
     color: $backGroundColor;
+  }
+
+  .buttonPrimary{
+    width: 300px;
+  }
+
+  .input-custom{
+    width: 300px;
   }
 
   .footer ul{

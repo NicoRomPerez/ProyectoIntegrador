@@ -3,7 +3,7 @@ import Footer from './Footer/Footer'
 import Header from './Header/Header'
 import '../App.scss'
 import Body from './Body/Body'
-import LoginComponent from './Auth/Login/LoginComponent';
+import LoginComponent from './Auth/Login/Login';
 
 const ComponenteDePrueba = () => {
   return (
