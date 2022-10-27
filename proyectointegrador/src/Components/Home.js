@@ -10,7 +10,9 @@ const Home = (log) => {
   return (
     <div>
         <Header className="header" log={a}></Header>
-        <Body></Body>
+        <Body>
+          
+        </Body>
         <Footer className="footer"></Footer>
     </div>
   )

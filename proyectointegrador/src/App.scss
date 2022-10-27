@@ -1,5 +1,9 @@
 @import './Styles/Scsss/abstracts/variables';
 
+body {
+  margin-bottom: 58px;
+}
+
 //Laptopt
 @media only  screen and (max-width: 1800px) and (min-width: 821px) {
   .header  .hamburgerMenu{
