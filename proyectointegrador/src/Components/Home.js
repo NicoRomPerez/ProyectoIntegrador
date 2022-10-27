@@ -5,13 +5,11 @@ import Body from './Body/Body'
 import CategoriesBlock from './Body/CategoriesBlock/CategoriesBlock'
 import ListBlock from './Body/ListBlock/ListBlock'
 
-const Home = (log) => {
-  const a = log;
-  console.log(a)
+const Home = () => {
 
   return (
     <div>
-        <Header className="header" log={a}></Header>
+        <Header className="header"></Header>
         <Body className="body">
           <CategoriesBlock></CategoriesBlock>
           <ListBlock></ListBlock>
