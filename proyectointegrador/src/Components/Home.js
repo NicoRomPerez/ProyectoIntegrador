@@ -12,11 +12,9 @@ const Home = (log) => {
   return (
     <div>
         <Header className="header" log={a}></Header>
-        <Body>
         <Body className="body">
           <CategoriesBlock></CategoriesBlock>
           <ListBlock></ListBlock>
-        </Body>
         </Body>
         <Footer className="footer"></Footer>
     </div>
