@@ -5,6 +5,7 @@ import Body from "../../Body/Body";
 import Input from "../../Commons/Input/Input";
 import "./../auth.scss";
 import "./Register.scss";
+import { json, Link } from "react-router-dom";
 import {validateEmail, validatePassword, validateRePassword} from './../utils'
 const Register = () => {
   const [password, setPassword]= useState("");
@@ -59,7 +60,10 @@ const Register = () => {
               <button className="buttonPrimary" onClick={onRegister} >Crear cuenta</button>
             </div>
           </form>
-
+          <span className="go-to-register">
+            ¿Ya tienes una cuenta? 
+            <Link to={"/login"}> Iniciar sesión</Link>
+          </span>
         </div>
       </Body>
       <Footer className="footer"></Footer>
