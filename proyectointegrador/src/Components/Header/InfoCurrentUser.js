@@ -10,13 +10,19 @@ const InfoCurrentUser = ({firstName,lastName}) => {
         apellido: lastName,
     })
 
+    const logOut = (e) => {
+        e.preventDefault()
+        window.localStorage.removeItem('currentUser')
+        document.location.href = "http://localhost:3000/register"
+    }
+
   return (
     <div className='infoUser'>
-        <a href='http://localhost:3000/home'>
+        <a onClick={logOut}>
             <img src={iconClose} alt="icon"/>
         </a>
         <div className='iconInfoUser'>
-            <h5>NR</h5>
+            <h5>{`${infoUser.nombre.substr(0,1)}${infoUser.apellido.substr(0,1)}`}</h5>
         </div>
         <div className='greetingUser'>
             <label>Hola,</label>

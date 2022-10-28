@@ -35,7 +35,7 @@ const Login = () => {
       if (correcto) {
 
         navigate("/home")
-        localStorage.userData = JSON.stringify(correcto)
+        localStorage.currentUser = JSON.stringify(correcto)
         setMessageUser('')
       }
 

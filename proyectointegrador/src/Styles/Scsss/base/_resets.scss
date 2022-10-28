@@ -103,11 +103,39 @@ label{
     height: 80px;
 
     padding: 10px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+//plantilla de buscador
+.seeker{
+    margin-top: 82px;
+    height: 161px;
+    background: $linksColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $backGroundColor;
+    .seekerInputs{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        .inputPrimary{
+            width: 422px;
+        }
+    }
+
 
 }
 
-.header li{
-    margin-left: 10px;
+option{
+    width: 300px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    border-radius: 5px;
 }
 
 //Plantilla menu hamburguesa
@@ -119,6 +147,9 @@ label{
 .menu{
     display: flex;
     flex-direction: row;
+    input{
+        margin: 0px 5px 0px 5px;
+    }
 
 }
 

@@ -4,7 +4,7 @@
 		"lastName": "Luque",
 		"email": "juan@luque.com",
 		"password": "juanluque123",
-		"isActive": "true"
+		"isActive": true
 	},
 	{
 		"firstName": "Brenda",
@@ -18,7 +18,7 @@
 		"lastName": "Romero",
 		"email": "nicolas@romero.com",
 		"password": "nicolasromero123",
-		"isActive": "true"
+		"isActive": true
 	},
 	{
 		"firstName": "Marisabel",
@@ -32,7 +32,7 @@
 		"lastName": "Ortiz",
 		"email": "natalia@ortiz.com",
 		"password": "nataliaortiz123",
-		"isActive": "true"
+		"isActive": true
 	},
 	{
 		"firstName": "Camilo",
