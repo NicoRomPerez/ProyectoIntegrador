@@ -10,7 +10,7 @@ const Searcher = () => {
   return (
     <div className='seeker'>
       <h1>
-        Busca ofertas en hoteles, casas y mucho más
+        Busca ofertas en departamentos, casas y mucho más
       </h1>
       <div className='seekerInputs'>
         <select className='inputPrimary'>

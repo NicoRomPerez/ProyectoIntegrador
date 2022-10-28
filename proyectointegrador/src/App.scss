@@ -64,6 +64,25 @@ body {
     display: none;
   }
 
+  .seeker{
+    height: 300px;
+    text-align: center;
+    .seekerInputs {
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .inputPrimary{
+        width: 300px;
+        margin: 10px;
+      }
+      .buttonPrimary{
+        margin: 10px;
+      }
+    }
+
+  } 
+
   
 }
 
