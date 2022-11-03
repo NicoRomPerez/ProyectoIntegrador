@@ -106,6 +106,13 @@ label{
     position: fixed;
     top: 0px;
     width: 100%;
+
+    box-shadow: 0px 1px 10px 0px #00000033;
+
+    box-shadow: 0px 4px 5px 0px #0000001F;
+
+    box-shadow: 0px 2px 4px 0px #00000024;
+
 }
 
 //plantilla de buscador
@@ -118,6 +125,7 @@ label{
     justify-content: space-evenly;
     align-items: center;
     color: $backGroundColor;
+    text-align: center;
     .seekerInputs{
         display: flex;
         justify-content: space-evenly;

@@ -4,6 +4,7 @@ import ComponenteDePrueba from './Components/ComponenteDePrueba';
 import Home from './Components/Home';
 import Login from './Components/Auth/Login/Login';
 import Register from './Components/Auth/Register/Register';
+import ProductDetail from './Components/ProductDetail/ProductDetail';
 import React, { useState } from 'react';
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/home' element={<Home log={logueado}/>}>
+        </Route>
+        <Route path='/detalle' element={<ProductDetail/>}>
         </Route>
         <Route path='/register' element={<Register/>}>
         </Route>

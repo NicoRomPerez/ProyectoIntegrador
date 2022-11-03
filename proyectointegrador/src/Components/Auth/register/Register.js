@@ -30,7 +30,7 @@ const Register = () => {
     <div className="auth">
       <Header className="header"></Header>
       <Body className="container">
-        <div className="card-login">
+        <div className="card-register">
           <h1 className="tittle">Crear cuenta</h1>
           <form onSubmit={onRegister}>
             <div className="full-name">

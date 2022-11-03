@@ -5,7 +5,10 @@ import "./ListCard.scss";
 
 const ListCard = () => {
 
-  
+  const viewDetail = (e) => {
+    e.preventDefault()
+    document.location.href = "http://localhost:3000/detalle"
+  }
 
   return (
     <>
@@ -28,7 +31,7 @@ const ListCard = () => {
               </div>
               <p>{department.location}</p>
               <p>{department.description}</p>
-              <button className="button-two">Ver detalle</button>
+              <button className="button-two" onClick={viewDetail}>Ver detalle</button>
             </div>
           </div>
         </li>

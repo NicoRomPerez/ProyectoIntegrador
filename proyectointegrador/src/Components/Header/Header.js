@@ -79,6 +79,21 @@ const Header = ({a}) => {
         </>:
         <></>
         }
+        {pageLocation ==="detalle" ? 
+        <>
+        <li>
+          <a href="http://localhost:3000/register">
+            <input className="buttonTthird" type="submit" value="Crear cuenta"></input>
+          </a>
+        </li>
+        <li>
+          <a  href="http://localhost:3000/login">
+            <input className="buttonTthird" type="submit" value="Iniciar sesión"></input>
+          </a>
+        </li>
+        </>:
+        <></>
+        }
       </ul>}
     </div>
   )

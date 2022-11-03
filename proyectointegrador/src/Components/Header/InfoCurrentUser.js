@@ -13,7 +13,7 @@ const InfoCurrentUser = ({firstName,lastName}) => {
     const logOut = (e) => {
         e.preventDefault()
         window.localStorage.removeItem('currentUser')
-        document.location.href = "http://localhost:3000/register"
+        document.location.href = "http://localhost:3000/login"
     }
 
   return (
