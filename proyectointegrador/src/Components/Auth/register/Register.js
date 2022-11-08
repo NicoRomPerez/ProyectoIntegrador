@@ -5,27 +5,27 @@ import Body from "../../Body/Body";
 import Input from "../../Commons/Input/Input";
 import "./../auth.scss";
 import "./Register.scss";
-import { json, Link } from "react-router-dom";
-import {validateEmail, validatePassword, validateRePassword} from './../utils'
+import { Link } from "react-router-dom";
+import { validateEmail, validatePassword, validateRePassword } from "../utils";
 const Register = () => {
-  const [password, setPassword]= useState("");
-  const [rePassword, setRePassword]= useState("");
-  const [email, setEmail]= useState("");
+  const [password, setPassword] = useState("");
+  const [rePassword, setRePassword] = useState("");
+  const [email, setEmail] = useState("");
   const [errorsMsg, setErrorsMsg] = useState({});
 
   const onRegister = (e) => {
     e.preventDefault();
 
     validateEmail(email, setErrorsMsg);
-    validatePassword(password, setErrorsMsg)
-    validateRePassword(password, rePassword,setErrorsMsg)
+    validatePassword(password, setErrorsMsg);
+    validateRePassword(password, rePassword, setErrorsMsg);
 
     if (errorsMsg.email || errorsMsg.password || errorsMsg.rePassword) {
-      return
-    } 
+      return;
+    }
 
-    console.log('Guardado con exito')
-  }
+    console.log("Guardado con exito");
+  };
   return (
     <div className="auth">
       <Header className="header"></Header>
@@ -37,14 +37,20 @@ const Register = () => {
               <Input label="Nombre" />
               <Input label="Apellido" />
             </div>
-            <Input label="Correo electrónico" value={email} type="email" onChange={(e) => setEmail(e.target.value)} error={errorsMsg.email}/>
+            <Input
+              label="Correo electrónico"
+              value={email}
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              error={errorsMsg.email}
+            />
             <Input
               label="Contraseña"
               type="password"
               required={true}
               minLength={6}
               value={password}
-              onChange={e => setPassword(e.target.value)}
+              onChange={(e) => setPassword(e.target.value)}
               error={errorsMsg.password}
             />
             <Input
@@ -57,11 +63,13 @@ const Register = () => {
               error={errorsMsg.rePassword}
             />
             <div className="container-button">
-              <button className="buttonPrimary" onClick={onRegister} >Crear cuenta</button>
+              <button className="buttonPrimary" onClick={onRegister}>
+                Crear cuenta
+              </button>
             </div>
           </form>
           <span className="go-to-register">
-            ¿Ya tienes una cuenta? 
+            ¿Ya tienes una cuenta?
             <Link to={"/login"}> Iniciar sesión</Link>
           </span>
         </div>
